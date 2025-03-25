@@ -1,0 +1,28 @@
+Creating a Transparent Table
+@EndUserText.label: 'Customer Master Table'
+define table zcustomer {
+  key customer_id   : abap.char(10),
+  name              : abap.char(50),
+  address           : abap.char(100),
+  contact_number    : abap.char(15),
+  email             : abap.char(50)
+};
+
+
+Simple Report to Display Customer Data
+
+
+REPORT zbilling_customer_list.
+
+TABLES: zcustomer.
+
+SELECT * FROM zcustomer INTO TABLE @DATA(lt_customers).
+
+IF lt_customers IS NOT INITIAL.
+  cl_salv_table=>factory(
+    IMPORTING r_salv_table = DATA(lo_alv)
+    CHANGING  t_table      = lt_customers ).
+  lo_alv->display( ).
+ELSE.
+  WRITE: / 'No customers found.'.
+ENDIF.
