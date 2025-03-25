@@ -1,0 +1,21 @@
+ZCUSTOMER: Customer master table.
+
+Fields: CustomerID, Name, Address, Contact, etc.
+
+ZPROJECT: Projects table.
+
+Fields: ProjectID, CustomerID (foreign key), ProjectName, StartDate, EndDate, Status.
+
+ZBILLING: Billing header table.
+
+Fields: BillingID, ProjectID, BillingDate, TotalAmount, Status.
+
+ZBILLING_ITEMS: Billing details table.
+
+Fields: BillingItemID, BillingID (foreign key), Description, Amount, Tax.
+
+Data Dictionary (DDIC) Considerations:
+Use appropriate data elements, domains, and foreign key relationships.
+
+Consider using views (e.g., join ZPROJECT and ZCUSTOMER) for reporting purposes.
+
