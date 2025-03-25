@@ -26,7 +26,7 @@ The **ABAP Billing System** is a project billing application built using SAP ABA
 
 ## Prerequisites
 - **SAP System:** SAP NetWeaver with ABAP Workbench.
-- **Development Tools:** Familiarity with ABAP Objects, Function Modules, ALV Grids, and SAPUI5 (if Fiori is used).
+- **Development Tools:** Familiarity with ABAP Objects, Function Modules, ALV Grids.
 - **Environment:** Access to an SAP system for development, testing, and deployment.
 
-Good Luck :)
+
