@@ -1,0 +1,12 @@
+Dynpro Screen Design
+Screen Elements:
+
+Input fields for project selection, billing period, etc.
+
+ALV grid for displaying generated billing items.
+
+Buttons for “Generate Invoice,” “Print Invoice,” and “Cancel.”
+
+Navigation:
+
+Create a menu structure or transaction code (e.g., ZBILLING_MAIN) that acts as the entry point.
