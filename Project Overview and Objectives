@@ -1,0 +1,13 @@
+Objective: Develop a billing system that can manage project-related invoices, customer data, billing schedules, and payment tracking.
+
+Key Features:
+
+Customer Management: Maintain customer master data.
+
+Project Management: Link projects to customers and track project-specific details.
+
+Billing Processes: Generate invoices, handle recurring billing, and manage billing adjustments.
+
+Payment Reconciliation: Monitor invoice statuses, payment receipts, and dunning processes.
+
+Reporting: Create standard and ad-hoc reports for analysis.
