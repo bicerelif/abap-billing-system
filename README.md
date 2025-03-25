@@ -1,4 +1,3 @@
-# abap-billing-system
 
 
 # ABAP Billing System
