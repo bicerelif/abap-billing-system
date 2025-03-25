@@ -26,3 +26,38 @@ IF lt_customers IS NOT INITIAL.
 ELSE.
   WRITE: / 'No customers found.'.
 ENDIF.
+
+
+
+Function Module for Invoice Generation
+
+
+Create a function module (e.g., ZFM_GENERATE_INVOICE) that:
+
+Accepts project and billing details.
+
+Calculates totals, taxes, and due dates.
+
+Inserts records into ZBILLING and ZBILLING_ITEMS tables.
+
+Returns a status and any error messages.
+
+
+FUNCTION zfm_generate_invoice.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(iv_project_id) TYPE zproject-project_id
+*"  EXPORTING
+*"     VALUE(ev_billing_id) TYPE zbilling-billing_id
+*"     VALUE(ev_status) TYPE abap.char(10)
+*"  EXCEPTIONS
+*"     error_in_data, billing_creation_failed
+*"----------------------------------------------------------------------
+  " Validate project ID
+  " Retrieve project and customer details
+  " Calculate invoice amounts, taxes, etc.
+  " Insert billing header into ZBILLING
+  " Loop to insert billing items into ZBILLING_ITEMS
+  " Return the generated billing ID and success status
+ENDFUNCTION.
